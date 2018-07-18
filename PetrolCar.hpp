@@ -1,18 +1,14 @@
 #pragma once
+#include <iostream>
 #include "PetrolEngine.hpp"
 #include  "Car.hpp"
 
 class PetrolCar : public Car
 {
 public:
-    PetrolCar(PetrolEngine* engine) 
-        : engine_(engine)
-    {}
-    ~PetrolCar() {}
-    void refill()
-    {
-        refuel();
-    }
+    PetrolCar(PetrolEngine* engine); 
+    virtual ~PetrolCar();
+    void refill();
 private:
     void refuel() {}
     PetrolEngine* engine_;
