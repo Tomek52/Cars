@@ -10,12 +10,20 @@ PetrolEngine::PetrolEngine(int power,
     , currentGear_(0)
 {
     std::cout << __FUNCTION__ << std::endl;
+    if(power<=0) throw InvalidPower();
+    if(capacity<=0) throw InvalidCapacity();
+    if(gears<=0) throw InvalidGears();
+}
+
+std::istream& operator>>(std::istream& is, PetrolEngine& PetrolEngine)
+{
+
 }
 
 void PetrolEngine::changeGear(int gear)
 {
     std::cout << __FUNCTION__ << std::endl;
-    if (gear > 6)
+    if (gear > gears_ || gear < 0)
     {
         throw InvalidGear();
     }

@@ -4,6 +4,7 @@
 
 int main()
 {
+    /*
     ElectricCar nissan(new ElectricEngine(130, 650));
     PetrolCar opel(new PetrolEngine(120, 1800, 6));
     HybridCar toyota(new PetrolEngine(80, 1400, 5), new ElectricEngine(100, 540));
@@ -23,4 +24,25 @@ int main()
     toyota.ElectricCar::brake();
     //toyota.charge();
     //toyota.refuel();
+    */
+    try
+    {
+        PetrolCar opel(new PetrolEngine(120, 1800, -6));
+    }
+    catch(InvalidGears& e)
+    {
+        std::cout<<e.what()<<std::endl;
+    }
+    catch(InvalidCapacity& e)
+    {
+        std::cout<<e.what()<<std::endl;
+    }
+    catch(InvalidPower& e)
+    {
+        std::cout<<e.what()<<std::endl;
+    }
+    catch(...)
+    {
+        std::cout<<"unknown error"<<std::endl;
+    }
 }
