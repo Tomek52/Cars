@@ -1,5 +1,22 @@
 #pragma once
 #include <iostream>
+#include <stdexcept>
+
+class InvalidElectricPower : public std::invalid_argument
+{
+    public:
+        InvalidElectricPower()
+            : invalid_argument("power must be positive value")
+        {}
+};
+
+class InvalidBatteryCapacity : public std::invalid_argument
+{
+    public:
+        InvalidBatteryCapacity()
+            : invalid_argument("battery capacity must be positive value")
+        {}
+};
 
 class ElectricEngine
 {
