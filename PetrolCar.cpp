@@ -12,7 +12,10 @@ PetrolCar::~PetrolCar()
     delete engine_;
 }
 
-void PetrolCar::refuel() {}
+void PetrolCar::refuel() 
+{
+    std::cout<<"refueling finished"<<std::endl;
+}
 
 void PetrolCar::refill()
 {

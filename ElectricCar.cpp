@@ -12,6 +12,11 @@ ElectricCar::~ElectricCar()
     delete engine_;
 }
 
+void ElectricCar::charge()
+{
+    std::cout<<"charging finished"<<std::cout<<endl;
+}
+
 void ElectricCar::refill()
 {
     charge();

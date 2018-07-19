@@ -15,11 +15,6 @@ PetrolEngine::PetrolEngine(int power,
     if(gears<=0) throw InvalidGears();
 }
 
-std::istream& operator>>(std::istream& is, PetrolEngine& PetrolEngine)
-{
-
-}
-
 void PetrolEngine::changeGear(int gear)
 {
     std::cout << __FUNCTION__ << std::endl;
