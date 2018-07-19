@@ -14,7 +14,7 @@ ElectricCar::~ElectricCar()
 
 void ElectricCar::charge()
 {
-    std::cout<<"charging finished"<<std::cout<<endl;
+    std::cout<<"charging finished"<<std::endl;
 }
 
 void ElectricCar::refill()

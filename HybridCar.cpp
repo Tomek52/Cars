@@ -9,7 +9,7 @@ HybridCar::HybridCar(PetrolEngine* petrolEng, ElectricEngine* electricEng)
 
 HybridCar::~HybridCar()
 {
-    std::cout<<"delete hybrid car"<<std:endl;
+    std::cout<<"delete hybrid car"<<std::endl;
 }
 
 void HybridCar::accelerate(int speed)
@@ -20,5 +20,5 @@ void HybridCar::accelerate(int speed)
 void HybridCar::refill()
 {
     PetrolCar::refill();
-    ElectriCar::refill();
+    ElectricCar::refill();
 }

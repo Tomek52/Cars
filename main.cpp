@@ -28,6 +28,7 @@ int main()
     try
     {
         PetrolCar opel(new PetrolEngine(120, 1800, 6));
+        HybridCar toyota(new PetrolEngine(110,1600,5), new ElectricEngine(100,600));
     }
     catch(InvalidGears& e)
     {

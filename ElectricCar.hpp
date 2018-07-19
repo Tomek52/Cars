@@ -10,7 +10,7 @@ public:
     virtual ~ElectricCar();
     void refill();
 private:
-    void charge() {}
+    void charge();
     ElectricEngine* engine_;
 };
 
