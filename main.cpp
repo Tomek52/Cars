@@ -27,7 +27,7 @@ int main()
     */
     try
     {
-        PetrolCar opel(new PetrolEngine(120, 1800, -6));
+        PetrolCar opel(new PetrolEngine(120, 1800, 6));
     }
     catch(InvalidGears& e)
     {

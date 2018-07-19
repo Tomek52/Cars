@@ -12,7 +12,9 @@ PetrolCar::~PetrolCar()
     delete engine_;
 }
 
-PetrolCar::refill()
+void PetrolCar::refuel() {}
+
+void PetrolCar::refill()
 {
     refuel();
 }
