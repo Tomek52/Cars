@@ -3,11 +3,11 @@
 #include "ElectricEngine.hpp"
 #include "Car.hpp"
 
-class ElectricCar : public Car
+class ElectricCar : virtual public Car
 {
 public:
     ElectricCar(ElectricEngine* engine);
-    ~ElectricCar();
+    virtual ~ElectricCar();
     void refill();
 private:
     void charge() {}

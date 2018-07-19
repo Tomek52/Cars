@@ -10,7 +10,7 @@ public:
         : PetrolCar(petrolEng)
         , ElectricCar(electricEng)
     {}
-    ~HybridCar() {}
+    virtual ~HybridCar() {}
     void accelerate(int speed) {
         PetrolCar::accelerate(speed);
     }

@@ -3,7 +3,7 @@
 #include "PetrolEngine.hpp"
 #include "Car.hpp"
 
-class PetrolCar : public Car
+class PetrolCar : virtual public Car
 {
 private:
     void refuel();
